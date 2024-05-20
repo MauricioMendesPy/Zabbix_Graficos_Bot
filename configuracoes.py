@@ -1,0 +1,1 @@
+#Arquivos de configurações para funcionamento do BOT
