@@ -149,8 +149,8 @@ def callbacks(call):
             'selectItems':['name','itemid'],
             'expandDescription': True,
             'sortfield': 'lastchange',
-            'sortorder': 'DESC'
-            #'withLastEventUnacknowledged':True #COLOQUE FALSE CASO QUEIRA MOSTRAR TODAS AS TRIGGERS
+            'sortorder': 'DESC',
+            'withLastEventUnacknowledged':True 
         
         })
 

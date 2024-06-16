@@ -22,7 +22,7 @@ user_admin = "LOGIN ADMIN"
 senha_admin = "SENHA ADMIN"
 
 
-#SE SUA PAGINA DE LOGIN ESTIVER EM INGLÊS, MUDE PARA "US"
+#SE SUA PAGINA DE LOGIN ESTIVER EM INGLÊS , MUDE PARA "US"
 lang_front = "PT"
 
 ################################################ EMOJIS ######################################################

@@ -1,3 +1,18 @@
+# -*- coding: utf-8 -*-
+###########################################################################################
+#                                Desenvolvido por                                         #
+#                             Mauricio Mendes Soares                                      #
+#-----------------------------------------------------------------------------------------#                                                                                         
+#                               Duvidas? 13 991210516                                     #
+#                             Linkedin - MauricioMendesPy                                 #
+#-----------------------------------------------------------------------------------------#                                                                                         #
+#                                                                                         #
+#                          TESTADO NA VERSÃO 6.0.25 -ZABBIX                               #                              
+#                         NÃO RETIRE OS CRÉDITOS POR GENTILEZA                            #
+#                                                                                         #
+#                                                                                         #
+#                                                                                         #
+###########################################################################################
 from datetime import datetime, timezone
 import requests
 import urllib3
@@ -115,3 +130,4 @@ class Paginacao:
         Menu.row(*navigation_buttons)
 
         return Menu
+    
