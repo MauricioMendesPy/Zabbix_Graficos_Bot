@@ -91,7 +91,7 @@ def gerar_grafico(id_grafico,periodo):
     return grafico_zabbix
 
 
-#CLASSE PARA CRIAR UM MENU DE BOTÕES
+#CLASSE PARA CRIAR MENU DE BOTÕES
 class Paginacao:
     def __init__(self, items):
         self.items = items
