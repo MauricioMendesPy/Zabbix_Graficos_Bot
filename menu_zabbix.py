@@ -115,6 +115,7 @@ def reconhecimento(message,**dict):
         for event_id in dict_message.values():
 
         
+            #ADICIONA 3 TIPO DE TRATATIVA AO EVENTO - 2- ACKNOWLEDGE - 4 - ADD MESSAGE - 8 - CHANGE SEVERITY
             users[chat_id].zapi.event.acknowledge({"eventids":event_id,"action":2|8|4,'message':users[chat_id].reco_message,'severity':1})
         bot.send_message(message.chat.id, "Trigger Reconhecida com Sucesso, Obrigado")
 
