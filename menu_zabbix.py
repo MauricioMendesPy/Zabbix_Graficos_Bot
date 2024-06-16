@@ -50,8 +50,7 @@ def getlogin(message):
     
     chat_id = message.chat.id
     
-    #VERIFIQUE SE OS LOGINS ESTÃO EM MAIUSCULOS NO SEU ZABBIX, CASO NÃO ESTEJA RETIRE O .UPPER()
-    users[chat_id].login = message.text.upper()
+    users[chat_id].login = message.text
 
     bot.send_message(message.chat.id,"Digite sua senha")
     bot.register_next_step_handler(message,get_senha)
