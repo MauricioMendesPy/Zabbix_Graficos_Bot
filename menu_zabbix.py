@@ -104,7 +104,7 @@ def menu_principal(message):
 
 #FUNÇÃO ISOLADA PARA RECONMHECIMENTO DOS INCIDENTES ---------------------------------------- #
 def reconhecimento(message,**dict):
-    if message.text == "sair" or "Sair" or "SAIR":
+    if message.text == "sair":
         menu_principal(message)
     else:
         chat_id = message.chat.id
