@@ -299,14 +299,16 @@ def callbacks_hostgroup(call):
 
         })
 
-        if groups_get = []:
-            bot.send_message(chat_id,"Não possui nenhum gráfico para ser exibido")
+       
+        
+            
+        #ARMAZENA TODOS OS HOST_GROUPS_IDS QUE POSSUEM GRAFICOS
+        users[chat_id].grupos_dict = {h_groups['groupid']: h_groups['name'] for h_groups in groups_get}
+        
+        if users[chat_id].grupos_dict == {}:
+            bot.send_message(chat_id, "Não foi possivel localizar nenhum gáfico com base no seu Login")
             menu_principal(call.message)
         else:
-            
-            #ARMAZENA TODOS OS HOST_GROUPS_IDS QUE POSSUEM GRAFICOS
-            users[chat_id].grupos_dict = {h_groups['groupid']: h_groups['name'] for h_groups in groups_get}
-    
             paginas = Paginacao(list(users[chat_id].grupos_dict.values()))
     
             menu = paginas.criar_pagina(pagina, items_por_pagina,prefixo)
