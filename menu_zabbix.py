@@ -155,7 +155,7 @@ def callbacks(call):
         
         })
 
-        print(f'OBTER_TRIGGERS_RAIZ {obter_triggers}\n\n\n')
+        
 
 
         #TRIGGERID COM DESCRIÇÃO DO EVENTO -------------------------------------#
@@ -245,9 +245,7 @@ def callbacks(call):
             if trigger_id_clock == t:
                 dict_clock[call.data] = clock
 
-
-    #FAZ A VERIFICAÇÃO DO EVENTO COM O HORARIO
-    print(f'DICT_TRATADO: \n{users[chat_id].dict_tratado}\n\n\n')
+    
 
             
     
@@ -448,9 +446,6 @@ def callbacks_item(call):
 
 @bot.callback_query_handler(func=lambda call: call.data in users[call.message.chat.id].graph_item.keys())
 def callbacks_graphs(call):
-    
-
-    print(f'CALL DATA : {call.data}')
 
     
     chat_id = call.message.chat.id
@@ -475,7 +470,6 @@ def callbacks_graphs(call):
 #VERIFICA OS CALLBACKS DOS BOTÕES DE PERIODOS
 @bot.callback_query_handler(func=lambda call: call.data.startswith("horas"))
 def callbacks_graphs(call):
-    print(call.data)
     
     chat_id = call.message.chat.id
 
