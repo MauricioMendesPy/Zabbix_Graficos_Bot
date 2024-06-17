@@ -298,15 +298,20 @@ def callbacks_hostgroup(call):
             'real_hosts':True 
 
         })
-        
-        #ARMAZENA TODOS OS HOST_GROUPS_IDS QUE POSSUEM GRAFICOS
-        users[chat_id].grupos_dict = {h_groups['groupid']: h_groups['name'] for h_groups in groups_get}
 
-        paginas = Paginacao(list(users[chat_id].grupos_dict.values()))
-
-        menu = paginas.criar_pagina(pagina, items_por_pagina,prefixo)
-       
-        bot.send_message(chat_id, 'Escolha um <b>Host-Group:</b>', reply_markup=menu,parse_mode="HTML")
+        if groups_get = []:
+            bot.send_message(chat_id,"Não possui nenhum gráfico para ser exibido")
+            menu_principal(call.message)
+        else:
+            
+            #ARMAZENA TODOS OS HOST_GROUPS_IDS QUE POSSUEM GRAFICOS
+            users[chat_id].grupos_dict = {h_groups['groupid']: h_groups['name'] for h_groups in groups_get}
+    
+            paginas = Paginacao(list(users[chat_id].grupos_dict.values()))
+    
+            menu = paginas.criar_pagina(pagina, items_por_pagina,prefixo)
+           
+            bot.send_message(chat_id, 'Escolha um <b>Host-Group:</b>', reply_markup=menu,parse_mode="HTML")
 
 #LIDA COM OS CALLBACKS DAS PAGINAS
 @bot.callback_query_handler(func=lambda call: call.data.startswith('page_'))
