@@ -151,7 +151,7 @@ def callbacks(call):
             'expandDescription': True,
             'sortfield': 'lastchange',
             'sortorder': 'DESC',
-            'withLastEventUnacknowledged':True 
+            'withLastEventUnacknowledged':True
         
         })
 
