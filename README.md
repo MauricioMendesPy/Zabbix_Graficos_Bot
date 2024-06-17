@@ -44,6 +44,8 @@ e obter imagem dos gráficos.
   
 - Valide se deu tudo certo usando como interpretador o python do seu env:
   <pre>/home/pasta_do_seu_env/bin/ptyhon3 /home/pasta_do_seu_env/menu_zabbix.py</pre>
+  mostrará algo assim:
+
 - volte no bot que você criou e digite o comando
 <pre>/inicio</pre>
 retornará:
@@ -54,6 +56,9 @@ retornará:
 - Login no Zabbix pelo Bot fazendo com que cada tratativa leve o nome do usuário Logado.
 - Paginação de InlineButtons - Caso você posua em seu Zabbix muitos HostGroups, Hosts e Itens o bot faz uma paginação dos botões criados
 - Busca de Gráficos trazendo itens que já possuem gráficos criados no Zabbix.
+- <img widht=150 height=150 src="https://github.com/MauricioMendesPy/Zabbix_Graficos_Bot/assets/148800324/375e927f-95db-472e-8e46-89b8b349759e" />
+
+
 
   
 ## Criando um arquivo <b>.service</b> para deixar o bot como serviço
@@ -79,6 +84,10 @@ retornará:
 salve o arquivo e execute os comandos:
 <pre> systemctl daemon-reload</pre>
 <pre>systemctl start "SEU_SERVIÇO".service</pre>
+mostrará assim:
+<img widht=150 height=150 src="https://github.com/MauricioMendesPy/Zabbix_Graficos_Bot/assets/148800324/3777016b-8fac-4f8b-99a8-1e65ba8546b4" />
+
+
 
 Assim o bot ficará rodando como serviço e você pode consultar os logs com o comando:
 <pre>journalctl -u "SEU_SERVIÇO".service</pre>
