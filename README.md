@@ -11,7 +11,7 @@ bot de automaçao no <b>Zabbix</b> para reconhecimento e busca de gráficos.
 
 #### Como foi pensado
 
-O bot foi construido para ser simples e eficiente com o pricipal objetivo de permitir que usuários sem acesso ao front do Zabbix possam reconhecer incidentes
+O bot foi construido para ser simples e eficiente com o principal objetivo de permitir que usuários sem acesso ao front do Zabbix possam reconhecer incidentes
 e obter imagem dos gráficos.
 
 ### Como usar:
