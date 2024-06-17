@@ -306,7 +306,7 @@ def callbacks_hostgroup(call):
         users[chat_id].grupos_dict = {h_groups['groupid']: h_groups['name'] for h_groups in groups_get}
         
         if users[chat_id].grupos_dict == {}:
-            bot.send_message(chat_id, "Não foi possivel localizar nenhum gáfico com base no seu Login")
+            bot.send_message(chat_id, "Não foi possivel localizar nenhum gráfico com base no seu Login,Obrigado")
             menu_principal(call.message)
         else:
             paginas = Paginacao(list(users[chat_id].grupos_dict.values()))
