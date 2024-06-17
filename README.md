@@ -33,6 +33,7 @@ e obter imagem dos gráficos.
     
 
 - Configure os campos no arquivo Configuracoes.py
+lembre-se que a URL do Zabbix precisa conter "http://IP_DO_ZABBIX/Zabbix"
   ```python
     #CONFIGURAÇÕES DO TELEGRAM----------------------------------------------#
     api_token = "TOKEN DO SEU BOT"
