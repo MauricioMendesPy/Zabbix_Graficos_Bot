@@ -36,14 +36,17 @@ e obter imagem dos gráficos.
 
 lembre-se que a URL do Zabbix precisa conter "http://IP_DO_ZABBIX/zabbix"
 
+
   ```python
-    #CONFIGURAÇÕES DO     TELEGRAM----------------------------------------------#
-    api_token = "TOKEN DO SEU BOT"
-    bot = TeleBot(api_token)
-    #ZABBIX------------------------------------------------------------------#
-    url_zab = "URL DO SEU ZABBIX"
-    user_admin = "LOGIN ADMIN"
-    senha_admin = "SENHA ADMIN"
+
+      #CONFIGURAÇÕES DO     TELEGRAM----------------------------------------------#
+      api_token = "TOKEN DO SEU BOT"
+      bot = TeleBot(api_token)
+      #ZABBIX------------------------------------------------------------------#
+      url_zab = "URL DO SEU ZABBIX"
+      user_admin = "LOGIN ADMIN"
+      senha_admin = "SENHA ADMIN"
+ ```
 
 
 
