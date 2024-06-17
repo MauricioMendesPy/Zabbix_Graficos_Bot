@@ -34,7 +34,7 @@ e obter imagem dos gráficos.
 
 - Configure os campos no arquivo Configuracoes.py
 
-lembre-se que a URL do Zabbix precisa conter "http://IP_DO_ZABBIX/Zabbix"
+lembre-se que a URL do Zabbix precisa conter "http://IP_DO_ZABBIX/zabbix"
 
   ```python
     #CONFIGURAÇÕES DO TELEGRAM----------------------------------------------#
